@@ -1,0 +1,41 @@
+{
+  "name": "html-ouput-kit",
+  "version": "1.0.0",
+  "description": "HTML to PDF/DOCX converter with Tailwind support",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "rimraf output && ts-node-dev --respawn src/index.ts",
+    "build": "rimraf dist && tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "html",
+    "pdf",
+    "docx",
+    "tailwind",
+    "converter"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "html-docx-js": "^0.3.1",
+    "playwright": "^1.51.0",
+    "puppeteer": "^24.4.0",
+    "tailwind-to-inline": "^1.0.5",
+    "tailwindinline": "https://github.com/ArziBlack/tailwindinline/releases/download/0.3.7-beta.8/tailwindinline-v0.3.7-beta.8.tgz"
+  },
+  "devDependencies": {
+    "@types/html-docx-js": "^0.3.4",
+    "@types/node": "^22.13.10",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.2"
+  }
+}
