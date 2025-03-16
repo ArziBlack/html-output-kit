@@ -1,26 +1,32 @@
 {
   "name": "html-ouput-kit",
-  "version": "1.0.0",
-  "description": "HTML to PDF/DOCX converter with Tailwind support",
+  "version": "1.0.1",
+  "description": "A utility to convert HTML content to PDF and DOCX with Tailwind CSS support",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "types/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "package.json",
+    "README.md",
+    "types"
   ],
   "scripts": {
     "start": "node dist/index.js",
     "dev": "rimraf output && ts-node-dev --respawn src/index.ts",
     "build": "rimraf dist && tsc",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "html",
     "pdf",
     "docx",
+    "converter",
     "tailwind",
-    "converter"
+    "puppeteer",
+    "playwright"
   ],
-  "author": "Your Name",
+  "author": "Milton Black, ArziBlack",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.4.1",
@@ -37,5 +43,13 @@
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArziBlack/html-ouput-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArziBlack/html-ouput-kit/issues"
+  },
+  "homepage": "https://github.com/ArziBlack/html-ouput-kit#readme"
 }

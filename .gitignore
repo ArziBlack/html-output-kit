@@ -2,3 +2,5 @@ node_modules/
 dist/
 output/
 *.log 
+package-lock.json
+html-ouput-kit-v1.0.0.tgz
